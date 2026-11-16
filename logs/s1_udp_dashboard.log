@@ -1,0 +1,33 @@
+==============================================
+ Dashboard ECU  |  UDP  listening on 0.0.0.0:5000
+ Press Ctrl+C to stop
+==============================================
+[INFO ] First datagram from Vehicle ECU 127.0.0.1:42069
+[RX     0] Speed    0.0 km/h | RPM  823 | Steer   +1.4 deg RIGHT | Gear N | Temp  24.8 C | 0.087 ms
+[RX     1] Speed    5.3 km/h | RPM 1365 | Steer   +7.5 deg RIGHT | Gear 1 | Temp  25.8 C | 0.182 ms
+[RX     2] Speed    9.2 km/h | RPM 1848 | Steer  +12.5 deg RIGHT | Gear 1 | Temp  27.1 C | 0.184 ms
+[RX     3] Speed   15.5 km/h | RPM 2480 | Steer  +19.3 deg RIGHT | Gear 1 | Temp  28.0 C | 0.404 ms
+[RX     4] Speed   21.0 km/h | RPM 2076 | Steer  +22.2 deg RIGHT | Gear 2 | Temp  29.3 C | 0.179 ms
+[RX     5] Speed   23.5 km/h | RPM 2249 | Steer  +27.4 deg RIGHT | Gear 2 | Temp  30.0 C | 0.182 ms
+[RX     6] Speed   28.8 km/h | RPM 2562 | Steer  +29.1 deg RIGHT | Gear 2 | Temp  31.3 C | 0.164 ms
+[RX     7] Speed   34.1 km/h | RPM 2952 | Steer  +30.4 deg RIGHT | Gear 2 | Temp  32.2 C | 0.214 ms
+[RX     8] Speed   40.7 km/h | RPM 2589 | Steer  +30.7 deg RIGHT | Gear 3 | Temp  33.0 C | 0.190 ms
+[RX     9] Speed   45.8 km/h | RPM 2819 | Steer  +28.3 deg RIGHT | Gear 3 | Temp  33.8 C | 0.160 ms
+[RX    10] Speed   50.0 km/h | RPM 2961 | Steer  +25.5 deg RIGHT | Gear 3 | Temp  34.8 C | 0.156 ms
+[RX    11] Speed   54.1 km/h | RPM 3166 | Steer  +21.8 deg RIGHT | Gear 3 | Temp  35.6 C | 0.171 ms
+[RX    12] Speed   60.0 km/h | RPM 2868 | Steer  +18.6 deg RIGHT | Gear 4 | Temp  36.8 C | 0.131 ms
+[RX    13] Speed   64.2 km/h | RPM 2991 | Steer  +12.8 deg RIGHT | Gear 4 | Temp  37.6 C | 0.167 ms
+[RX    14] Speed   71.0 km/h | RPM 3197 | Steer   +8.2 deg RIGHT | Gear 4 | Temp  38.3 C | 0.162 ms
+[INFO ] No data for 4 s - stopping
+
+--------------- Dashboard ECU summary ---------------
+ Protocol          : UDP
+ Frames received   : 15  (1243 bytes)
+ Valid             : 15
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.087 / avg 0.182 / max 0.404
+ Active duration   : 14.00 s
+-----------------------------------------------------

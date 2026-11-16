@@ -1,0 +1,89 @@
+### 4a  Malformed IP address
+$ ./vehicle_ecu -m udp -i 192.168.1.300 -n 3
+[ERROR] Invalid IP address '192.168.1.300' - expected dotted IPv4, e.g. 127.0.0.1
+[exit code 2]
+
+$ ./vehicle_ecu -m tcp -i 127.0.0.abc -n 3
+[ERROR] Invalid IP address '127.0.0.abc' - expected dotted IPv4, e.g. 127.0.0.1
+[exit code 2]
+
+### 4b  Well-formed but unreachable IP (no host answers at 10.255.255.1)
+$ ./vehicle_ecu -m tcp -i 10.255.255.1 -p 5300 -n 3 -r 2
+==============================================
+ Vehicle ECU  |  TCP  ->  10.255.255.1:5300
+ Period 1000.0 ms | Messages 3
+==============================================
+[INFO ] TCP connect attempt 1/2 to 10.255.255.1:5300 ...
+[WARN ] connect() failed: Connection timed out -> host unreachable / wrong IP?
+[INFO ] TCP connect attempt 2/2 to 10.255.255.1:5300 ...
+[WARN ] connect() failed: Connection timed out -> host unreachable / wrong IP?
+[ERROR] Could not reach Dashboard ECU at 10.255.255.1:5300 - exiting
+[exit code 3]
+
+$ ./vehicle_ecu -m udp -i 10.255.255.1 -p 5300 -n 3
+==============================================
+ Vehicle ECU  |  UDP  ->  10.255.255.1:5300
+ Period 1000.0 ms | Messages 3
+==============================================
+[TX     0] Speed    0.8 km/h | RPM  764 | Steer   -1.5 deg | Gear 0 | Temp  24.7 C
+[TX     1] Speed    5.5 km/h | RPM 1383 | Steer   +4.9 deg | Gear 1 | Temp  26.1 C
+[TX     2] Speed   10.1 km/h | RPM 1893 | Steer  +13.4 deg | Gear 1 | Temp  27.2 C
+---------------- Vehicle ECU summary ----------------
+ Protocol        : UDP
+ Generated       : 3
+ Sent OK         : 3
+ Send errors     : 0  (ICMP port-unreachable: 0)
+ Payload bytes   : 245
+ Duration        : 2.00 s
+-----------------------------------------------------
+[exit code 0]
+
+### 4c  Wrong IP: Dashboard bound to 127.0.0.1, Vehicle sends to 127.0.0.2
+$ ./vehicle_ecu -m udp -i 127.0.0.2 -p 5301 -n 4
+==============================================
+ Vehicle ECU  |  UDP  ->  127.0.0.2:5301
+ Period 1000.0 ms | Messages 4
+==============================================
+[TX     0] Speed    0.0 km/h | RPM  830 | Steer   +1.0 deg | Gear 0 | Temp  24.8 C
+[WARN ] seq=1: ICMP port unreachable - Dashboard ECU not listening (datagram lost, continuing)
+[TX     2] Speed   10.4 km/h | RPM 1943 | Steer  +11.4 deg | Gear 1 | Temp  27.1 C
+[WARN ] seq=3: ICMP port unreachable - Dashboard ECU not listening (datagram lost, continuing)
+---------------- Vehicle ECU summary ----------------
+ Protocol        : UDP
+ Generated       : 4
+ Sent OK         : 2
+ Send errors     : 2  (ICMP port-unreachable: 2)
+ Payload bytes   : 163
+ Duration        : 3.00 s
+-----------------------------------------------------
+[exit code 0]
+
+$ ./vehicle_ecu -m tcp -i 127.0.0.2 -p 5300 -n 3 -r 2
+==============================================
+ Vehicle ECU  |  TCP  ->  127.0.0.2:5300
+ Period 1000.0 ms | Messages 3
+==============================================
+[INFO ] TCP connect attempt 1/2 to 127.0.0.2:5300 ...
+[WARN ] connect() failed: Connection refused -> Dashboard ECU not running?
+[INFO ] TCP connect attempt 2/2 to 127.0.0.2:5300 ...
+[WARN ] connect() failed: Connection refused -> Dashboard ECU not running?
+[ERROR] Could not reach Dashboard ECU at 127.0.0.2:5300 - exiting
+[exit code 3]
+
+--- Dashboard ECU (UDP, bound to 127.0.0.1:5301) output during 4c:
+==============================================
+ Dashboard ECU  |  UDP  listening on 127.0.0.1:5301
+ Press Ctrl+C to stop
+==============================================
+[INFO ] No data for 5 s - stopping
+
+--------------- Dashboard ECU summary ---------------
+ Protocol          : UDP
+ Frames received   : 0  (0 bytes)
+ Valid             : 0
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Active duration   : 0.00 s
+-----------------------------------------------------

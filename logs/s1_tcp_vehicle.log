@@ -1,0 +1,31 @@
+==============================================
+ Vehicle ECU  |  TCP  ->  127.0.0.1:5001
+ Period 1000.0 ms | Messages 15
+==============================================
+[INFO ] TCP connect attempt 1/5 to 127.0.0.1:5001 ...
+[INFO ] Connected (3-way handshake complete). Local port 57382
+[TX     0] Speed    0.8 km/h | RPM  790 | Steer   -1.9 deg | Gear 0 | Temp  24.8 C
+[TX     1] Speed    5.4 km/h | RPM 1410 | Steer   +7.3 deg | Gear 1 | Temp  25.8 C
+[TX     2] Speed    9.9 km/h | RPM 1911 | Steer  +13.3 deg | Gear 1 | Temp  27.4 C
+[TX     3] Speed   15.0 km/h | RPM 2436 | Steer  +16.6 deg | Gear 1 | Temp  28.4 C
+[TX     4] Speed   21.0 km/h | RPM 2060 | Steer  +23.2 deg | Gear 2 | Temp  29.0 C
+[TX     5] Speed   23.8 km/h | RPM 2282 | Steer  +25.3 deg | Gear 2 | Temp  30.1 C
+[TX     6] Speed   29.0 km/h | RPM 2618 | Steer  +27.6 deg | Gear 2 | Temp  31.5 C
+[TX     7] Speed   35.8 km/h | RPM 3006 | Steer  +28.7 deg | Gear 2 | Temp  32.2 C
+[TX     8] Speed   40.7 km/h | RPM 2566 | Steer  +30.6 deg | Gear 3 | Temp  33.0 C
+[TX     9] Speed   46.1 km/h | RPM 2824 | Steer  +28.5 deg | Gear 3 | Temp  33.9 C
+[TX    10] Speed   49.3 km/h | RPM 2952 | Steer  +25.0 deg | Gear 3 | Temp  35.1 C
+[TX    11] Speed   55.3 km/h | RPM 3231 | Steer  +22.8 deg | Gear 3 | Temp  35.8 C
+[TX    12] Speed   60.0 km/h | RPM 2828 | Steer  +18.3 deg | Gear 4 | Temp  36.8 C
+[TX    13] Speed   66.4 km/h | RPM 3015 | Steer  +13.9 deg | Gear 4 | Temp  37.4 C
+[TX    14] Speed   70.9 km/h | RPM 3183 | Steer   +4.5 deg | Gear 4 | Temp  38.6 C
+[INFO ] Closing connection: shutdown(SHUT_WR) -> FIN sent
+[INFO ] Connection closed (FIN/ACK exchange complete)
+---------------- Vehicle ECU summary ----------------
+ Protocol        : TCP
+ Generated       : 15
+ Sent OK         : 15
+ Send errors     : 0  (reconnects: 0)
+ Payload bytes   : 1244
+ Duration        : 14.00 s
+-----------------------------------------------------

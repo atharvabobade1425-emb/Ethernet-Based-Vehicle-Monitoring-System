@@ -1,0 +1,30 @@
+==============================================
+ Dashboard ECU  |  TCP  listening on 0.0.0.0:5202
+ Press Ctrl+C to stop
+==============================================
+[INFO ] Waiting for Vehicle ECU connection ...
+[INFO ] Vehicle ECU connected from 127.0.0.1:51714 (session 1)
+[RX     7] Speed   33.5 km/h | RPM 2901 | Steer  +29.5 deg RIGHT | Gear 2 | Temp  32.2 C | 0.065 ms
+[RX     8] Speed   40.9 km/h | RPM 2614 | Steer  +29.9 deg RIGHT | Gear 3 | Temp  33.3 C | 0.072 ms
+[RX     9] Speed   45.1 km/h | RPM 2795 | Steer  +29.6 deg RIGHT | Gear 3 | Temp  34.0 C | 0.124 ms
+[RX    10] Speed   50.7 km/h | RPM 3039 | Steer  +25.6 deg RIGHT | Gear 3 | Temp  34.7 C | 0.119 ms
+[RX    11] Speed   55.5 km/h | RPM 3210 | Steer  +24.0 deg RIGHT | Gear 3 | Temp  36.0 C | 0.205 ms
+[RX    12] Speed   60.1 km/h | RPM 2813 | Steer  +17.8 deg RIGHT | Gear 4 | Temp  36.5 C | 0.273 ms
+[RX    13] Speed   65.4 km/h | RPM 3017 | Steer  +11.9 deg RIGHT | Gear 4 | Temp  37.7 C | 0.136 ms
+[INFO ] Vehicle ECU 127.0.0.1:51714 closed the connection (FIN received)
+[INFO ] Connection with 127.0.0.1:51714 closed
+[INFO ] Waiting for Vehicle ECU connection ...
+[INFO ] No data for 3 s - stopping
+
+--------------- Dashboard ECU summary ---------------
+ Protocol          : TCP
+ TCP sessions      : 1
+ Frames received   : 7  (585 bytes)
+ Valid             : 7
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.065 / avg 0.142 / max 0.273
+ Active duration   : 5.00 s
+-----------------------------------------------------

@@ -1,0 +1,27 @@
+==============================================
+ Vehicle ECU  |  UDP  ->  127.0.0.1:5000
+ Period 1000.0 ms | Messages 15
+==============================================
+[TX     0] Speed    0.0 km/h | RPM  823 | Steer   +1.4 deg | Gear 0 | Temp  24.8 C
+[TX     1] Speed    5.3 km/h | RPM 1365 | Steer   +7.5 deg | Gear 1 | Temp  25.8 C
+[TX     2] Speed    9.2 km/h | RPM 1848 | Steer  +12.5 deg | Gear 1 | Temp  27.1 C
+[TX     3] Speed   15.5 km/h | RPM 2480 | Steer  +19.3 deg | Gear 1 | Temp  28.0 C
+[TX     4] Speed   21.0 km/h | RPM 2076 | Steer  +22.2 deg | Gear 2 | Temp  29.3 C
+[TX     5] Speed   23.5 km/h | RPM 2249 | Steer  +27.4 deg | Gear 2 | Temp  30.0 C
+[TX     6] Speed   28.8 km/h | RPM 2562 | Steer  +29.1 deg | Gear 2 | Temp  31.3 C
+[TX     7] Speed   34.1 km/h | RPM 2952 | Steer  +30.4 deg | Gear 2 | Temp  32.2 C
+[TX     8] Speed   40.7 km/h | RPM 2589 | Steer  +30.7 deg | Gear 3 | Temp  33.0 C
+[TX     9] Speed   45.8 km/h | RPM 2819 | Steer  +28.3 deg | Gear 3 | Temp  33.8 C
+[TX    10] Speed   50.0 km/h | RPM 2961 | Steer  +25.5 deg | Gear 3 | Temp  34.8 C
+[TX    11] Speed   54.1 km/h | RPM 3166 | Steer  +21.8 deg | Gear 3 | Temp  35.6 C
+[TX    12] Speed   60.0 km/h | RPM 2868 | Steer  +18.6 deg | Gear 4 | Temp  36.8 C
+[TX    13] Speed   64.2 km/h | RPM 2991 | Steer  +12.8 deg | Gear 4 | Temp  37.6 C
+[TX    14] Speed   71.0 km/h | RPM 3197 | Steer   +8.2 deg | Gear 4 | Temp  38.3 C
+---------------- Vehicle ECU summary ----------------
+ Protocol        : UDP
+ Generated       : 15
+ Sent OK         : 15
+ Send errors     : 0  (ICMP port-unreachable: 0)
+ Payload bytes   : 1243
+ Duration        : 14.00 s
+-----------------------------------------------------

@@ -1,0 +1,38 @@
+==============================================
+ Dashboard ECU  |  TCP  listening on 0.0.0.0:5001
+ Press Ctrl+C to stop
+==============================================
+[INFO ] Waiting for Vehicle ECU connection ...
+[INFO ] Vehicle ECU connected from 127.0.0.1:57382 (session 1)
+[RX     0] Speed    0.8 km/h | RPM  790 | Steer   -1.9 deg LEFT  | Gear N | Temp  24.8 C | 0.056 ms
+[RX     1] Speed    5.4 km/h | RPM 1410 | Steer   +7.3 deg RIGHT | Gear 1 | Temp  25.8 C | 0.171 ms
+[RX     2] Speed    9.9 km/h | RPM 1911 | Steer  +13.3 deg RIGHT | Gear 1 | Temp  27.4 C | 0.129 ms
+[RX     3] Speed   15.0 km/h | RPM 2436 | Steer  +16.6 deg RIGHT | Gear 1 | Temp  28.4 C | 0.144 ms
+[RX     4] Speed   21.0 km/h | RPM 2060 | Steer  +23.2 deg RIGHT | Gear 2 | Temp  29.0 C | 0.166 ms
+[RX     5] Speed   23.8 km/h | RPM 2282 | Steer  +25.3 deg RIGHT | Gear 2 | Temp  30.1 C | 0.206 ms
+[RX     6] Speed   29.0 km/h | RPM 2618 | Steer  +27.6 deg RIGHT | Gear 2 | Temp  31.5 C | 0.112 ms
+[RX     7] Speed   35.8 km/h | RPM 3006 | Steer  +28.7 deg RIGHT | Gear 2 | Temp  32.2 C | 0.122 ms
+[RX     8] Speed   40.7 km/h | RPM 2566 | Steer  +30.6 deg RIGHT | Gear 3 | Temp  33.0 C | 0.137 ms
+[RX     9] Speed   46.1 km/h | RPM 2824 | Steer  +28.5 deg RIGHT | Gear 3 | Temp  33.9 C | 0.137 ms
+[RX    10] Speed   49.3 km/h | RPM 2952 | Steer  +25.0 deg RIGHT | Gear 3 | Temp  35.1 C | 0.132 ms
+[RX    11] Speed   55.3 km/h | RPM 3231 | Steer  +22.8 deg RIGHT | Gear 3 | Temp  35.8 C | 0.135 ms
+[RX    12] Speed   60.0 km/h | RPM 2828 | Steer  +18.3 deg RIGHT | Gear 4 | Temp  36.8 C | 0.128 ms
+[RX    13] Speed   66.4 km/h | RPM 3015 | Steer  +13.9 deg RIGHT | Gear 4 | Temp  37.4 C | 0.143 ms
+[RX    14] Speed   70.9 km/h | RPM 3183 | Steer   +4.5 deg RIGHT | Gear 4 | Temp  38.6 C | 0.128 ms
+[INFO ] Vehicle ECU 127.0.0.1:57382 closed the connection (FIN received)
+[INFO ] Connection with 127.0.0.1:57382 closed
+[INFO ] Waiting for Vehicle ECU connection ...
+[INFO ] No data for 3 s - stopping
+
+--------------- Dashboard ECU summary ---------------
+ Protocol          : TCP
+ TCP sessions      : 1
+ Frames received   : 15  (1244 bytes)
+ Valid             : 15
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.056 / avg 0.136 / max 0.206
+ Active duration   : 14.00 s
+-----------------------------------------------------

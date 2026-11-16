@@ -1,0 +1,4 @@
+src/vehicle_ecu
+src/dashboard_ecu
+*.o
+docs/source/.tmp_*

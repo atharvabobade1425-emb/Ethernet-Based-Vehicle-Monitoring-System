@@ -1,0 +1,94 @@
+########## udp  | interval=0.1 ms | messages=20000
+--- Vehicle ECU:
+---------------- Vehicle ECU summary ----------------
+ Protocol        : UDP
+ Generated       : 20000
+ Sent OK         : 20000
+ Send errors     : 0  (ICMP port-unreachable: 0)
+ Payload bytes   : 1690648
+ Duration        : 2.00 s
+-----------------------------------------------------
+--- Dashboard ECU:
+--------------- Dashboard ECU summary ---------------
+ Protocol          : UDP
+ Frames received   : 20000  (1690648 bytes)
+ Valid             : 20000
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.006 / avg 0.017 / max 2.295
+ Active duration   : 2.00 s
+-----------------------------------------------------
+
+########## tcp  | interval=0.1 ms | messages=20000
+--- Vehicle ECU:
+---------------- Vehicle ECU summary ----------------
+ Protocol        : TCP
+ Generated       : 20000
+ Sent OK         : 20000
+ Send errors     : 0  (reconnects: 0)
+ Payload bytes   : 1690699
+ Duration        : 2.00 s
+-----------------------------------------------------
+--- Dashboard ECU:
+--------------- Dashboard ECU summary ---------------
+ Protocol          : TCP
+ TCP sessions      : 1
+ Frames received   : 20000  (1690699 bytes)
+ Valid             : 20000
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.006 / avg 0.018 / max 1.097
+ Active duration   : 2.00 s
+-----------------------------------------------------
+
+########## udp  | interval=0 ms | messages=50000
+--- Vehicle ECU:
+---------------- Vehicle ECU summary ----------------
+ Protocol        : UDP
+ Generated       : 50000
+ Sent OK         : 50000
+ Send errors     : 0  (ICMP port-unreachable: 0)
+ Payload bytes   : 4213864
+ Duration        : 0.12 s
+-----------------------------------------------------
+--- Dashboard ECU:
+--------------- Dashboard ECU summary ---------------
+ Protocol          : UDP
+ Frames received   : 40138  (3385658 bytes)
+ Valid             : 40138
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 8725  (17.856 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.002 / avg 0.106 / max 4.036
+ Active duration   : 0.12 s
+-----------------------------------------------------
+
+########## tcp  | interval=0 ms | messages=50000
+--- Vehicle ECU:
+---------------- Vehicle ECU summary ----------------
+ Protocol        : TCP
+ Generated       : 50000
+ Sent OK         : 50000
+ Send errors     : 0  (reconnects: 0)
+ Payload bytes   : 4213989
+ Duration        : 0.05 s
+-----------------------------------------------------
+--- Dashboard ECU:
+--------------- Dashboard ECU summary ---------------
+ Protocol          : TCP
+ TCP sessions      : 1
+ Frames received   : 50000  (4213989 bytes)
+ Valid             : 50000
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.005 / avg 0.562 / max 4.019
+ Active duration   : 0.05 s
+-----------------------------------------------------
+

@@ -1,0 +1,25 @@
+==============================================
+ Dashboard ECU  |  TCP  listening on 0.0.0.0:5202
+ Press Ctrl+C to stop
+==============================================
+[INFO ] Waiting for Vehicle ECU connection ...
+[INFO ] Vehicle ECU connected from 127.0.0.1:53090 (session 1)
+[RX     0] Speed    0.0 km/h | RPM  839 | Steer   -0.9 deg       | Gear N | Temp  24.7 C | 0.133 ms
+[RX     1] Speed    3.7 km/h | RPM 1230 | Steer   +4.8 deg RIGHT | Gear 1 | Temp  26.3 C | 0.115 ms
+[RX     2] Speed   11.2 km/h | RPM 1997 | Steer  +13.7 deg RIGHT | Gear 1 | Temp  27.4 C | 0.122 ms
+[RX     3] Speed   14.7 km/h | RPM 2374 | Steer  +18.5 deg RIGHT | Gear 1 | Temp  28.4 C | 0.120 ms
+[RX     4] Speed   18.8 km/h | RPM 2854 | Steer  +21.2 deg RIGHT | Gear 1 | Temp  29.4 C | 0.133 ms
+[INFO ] Connection with 127.0.0.1:53090 closed
+
+--------------- Dashboard ECU summary ---------------
+ Protocol          : TCP
+ TCP sessions      : 1
+ Frames received   : 5  (411 bytes)
+ Valid             : 5
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.115 / avg 0.125 / max 0.133
+ Active duration   : 4.00 s
+-----------------------------------------------------

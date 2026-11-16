@@ -1,0 +1,22 @@
+==============================================
+ Dashboard ECU  |  UDP  listening on 0.0.0.0:5203
+ Press Ctrl+C to stop
+==============================================
+[INFO ] First datagram from Vehicle ECU 127.0.0.1:35227
+[RX     0] Speed    0.0 km/h | RPM  779 | Steer   -0.7 deg       | Gear N | Temp  25.0 C | 0.101 ms
+[RX     1] Speed    5.7 km/h | RPM 1446 | Steer   +7.7 deg RIGHT | Gear 1 | Temp  26.0 C | 0.183 ms
+[RX     2] Speed    8.5 km/h | RPM 1756 | Steer  +10.4 deg RIGHT | Gear 1 | Temp  27.0 C | 0.129 ms
+[RX     3] Speed   14.7 km/h | RPM 2422 | Steer  +15.8 deg RIGHT | Gear 1 | Temp  27.9 C | 0.135 ms
+[RX     4] Speed   20.6 km/h | RPM 2092 | Steer  +22.6 deg RIGHT | Gear 2 | Temp  29.2 C | 0.283 ms
+
+--------------- Dashboard ECU summary ---------------
+ Protocol          : UDP
+ Frames received   : 5  (410 bytes)
+ Valid             : 5
+ Checksum errors   : 0
+ Malformed         : 0
+ Lost (seq gaps)   : 0  (0.000 %)
+ Out-of-order/dup  : 0
+ Latency ms        : min 0.101 / avg 0.166 / max 0.283
+ Active duration   : 4.00 s
+-----------------------------------------------------

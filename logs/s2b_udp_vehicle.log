@@ -1,0 +1,24 @@
+==============================================
+ Vehicle ECU  |  UDP  ->  127.0.0.1:5203
+ Period 1000.0 ms | Messages 12
+==============================================
+[TX     0] Speed    0.0 km/h | RPM  779 | Steer   -0.7 deg | Gear 0 | Temp  25.0 C
+[TX     1] Speed    5.7 km/h | RPM 1446 | Steer   +7.7 deg | Gear 1 | Temp  26.0 C
+[TX     2] Speed    8.5 km/h | RPM 1756 | Steer  +10.4 deg | Gear 1 | Temp  27.0 C
+[TX     3] Speed   14.7 km/h | RPM 2422 | Steer  +15.8 deg | Gear 1 | Temp  27.9 C
+[TX     4] Speed   20.6 km/h | RPM 2092 | Steer  +22.6 deg | Gear 2 | Temp  29.2 C
+[TX     5] Speed   23.6 km/h | RPM 2224 | Steer  +25.8 deg | Gear 2 | Temp  30.3 C
+[WARN ] seq=6: ICMP port unreachable - Dashboard ECU not listening (datagram lost, continuing)
+[TX     7] Speed   34.5 km/h | RPM 2904 | Steer  +30.7 deg | Gear 2 | Temp  32.1 C
+[WARN ] seq=8: ICMP port unreachable - Dashboard ECU not listening (datagram lost, continuing)
+[TX     9] Speed   45.8 km/h | RPM 2838 | Steer  +27.9 deg | Gear 3 | Temp  34.2 C
+[TX    10] Speed   50.0 km/h | RPM 2993 | Steer  +24.0 deg | Gear 3 | Temp  35.2 C
+[TX    11] Speed   56.4 km/h | RPM 3244 | Steer  +24.0 deg | Gear 3 | Temp  36.0 C
+---------------- Vehicle ECU summary ----------------
+ Protocol        : UDP
+ Generated       : 12
+ Sent OK         : 10
+ Send errors     : 2  (ICMP port-unreachable: 2)
+ Payload bytes   : 827
+ Duration        : 11.00 s
+-----------------------------------------------------

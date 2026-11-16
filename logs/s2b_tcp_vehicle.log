@@ -1,0 +1,38 @@
+==============================================
+ Vehicle ECU  |  TCP  ->  127.0.0.1:5202
+ Period 1000.0 ms | Messages 14
+==============================================
+[INFO ] TCP connect attempt 1/10 to 127.0.0.1:5202 ...
+[WARN ] connect() failed: Connection refused -> Dashboard ECU not running?
+[INFO ] TCP connect attempt 2/10 to 127.0.0.1:5202 ...
+[WARN ] connect() failed: Connection refused -> Dashboard ECU not running?
+[INFO ] TCP connect attempt 3/10 to 127.0.0.1:5202 ...
+[INFO ] Connected (3-way handshake complete). Local port 53090
+[TX     0] Speed    0.0 km/h | RPM  839 | Steer   -0.9 deg | Gear 0 | Temp  24.7 C
+[TX     1] Speed    3.7 km/h | RPM 1230 | Steer   +4.8 deg | Gear 1 | Temp  26.3 C
+[TX     2] Speed   11.2 km/h | RPM 1997 | Steer  +13.7 deg | Gear 1 | Temp  27.4 C
+[TX     3] Speed   14.7 km/h | RPM 2374 | Steer  +18.5 deg | Gear 1 | Temp  28.4 C
+[TX     4] Speed   18.8 km/h | RPM 2854 | Steer  +21.2 deg | Gear 1 | Temp  29.4 C
+[TX     5] Speed   25.3 km/h | RPM 2363 | Steer  +27.6 deg | Gear 2 | Temp  30.1 C
+[WARN ] seq=6: TCP send failed: Broken pipe -> reconnecting
+[INFO ] TCP connect attempt 1/10 to 127.0.0.1:5202 ...
+[WARN ] connect() failed: Connection refused -> Dashboard ECU not running?
+[INFO ] TCP connect attempt 2/10 to 127.0.0.1:5202 ...
+[INFO ] Connected (3-way handshake complete). Local port 51714
+[TX     7] Speed   33.5 km/h | RPM 2901 | Steer  +29.5 deg | Gear 2 | Temp  32.2 C
+[TX     8] Speed   40.9 km/h | RPM 2614 | Steer  +29.9 deg | Gear 3 | Temp  33.3 C
+[TX     9] Speed   45.1 km/h | RPM 2795 | Steer  +29.6 deg | Gear 3 | Temp  34.0 C
+[TX    10] Speed   50.7 km/h | RPM 3039 | Steer  +25.6 deg | Gear 3 | Temp  34.7 C
+[TX    11] Speed   55.5 km/h | RPM 3210 | Steer  +24.0 deg | Gear 3 | Temp  36.0 C
+[TX    12] Speed   60.1 km/h | RPM 2813 | Steer  +17.8 deg | Gear 4 | Temp  36.5 C
+[TX    13] Speed   65.4 km/h | RPM 3017 | Steer  +11.9 deg | Gear 4 | Temp  37.7 C
+[INFO ] Closing connection: shutdown(SHUT_WR) -> FIN sent
+[INFO ] Connection closed (FIN/ACK exchange complete)
+---------------- Vehicle ECU summary ----------------
+ Protocol        : TCP
+ Generated       : 14
+ Sent OK         : 13
+ Send errors     : 1  (reconnects: 1)
+ Payload bytes   : 1079
+ Duration        : 13.00 s
+-----------------------------------------------------
